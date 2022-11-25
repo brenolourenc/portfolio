@@ -1,0 +1,29 @@
+.project-item h2,
+.project-item p,
+.project-item button {
+  color: rgba(255, 255, 255, 0.8352941176);
+  margin: 10px 20px;
+  text-align: center;
+  transition: 0.3s;
+  word-break: break-word;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8352941176);
+}
+
+.project-item p {
+  line-height: 20px;
+}
+
+.project-item button {
+  display: block;
+  width: 85%;
+  height: 40px;
+  border: solid 2.5px rgb(40, 180, 145);
+  border-bottom: solid 6px rgb(40, 180, 145);
+  background: transparent;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.project-item button:hover {
+  background: rgb(40, 180, 145);
+}

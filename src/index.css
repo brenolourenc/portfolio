@@ -1,0 +1,74 @@
+*, *:before, *:after {
+  font-family: "Russo One", sans-serif;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(16, 16, 16, 0.8784313725);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 1px solid rgba(16, 16, 16, 0.8784313725);
+}
+
+:root {
+  line-height: 24px;
+  font-weight: 400;
+  color-scheme: light light;
+  color: rgba(16, 16, 16, 0.7529411765);
+  background-color: #f5f5f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  display: block;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  font-weight: 500;
+  color: #0d70ad;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #2290cc;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  transition: 0.1s ease;
+}
+
+.dark-mode {
+  color: rgba(255, 255, 255, 0.8980392157);
+  background: rgba(16, 16, 16, 0.8156862745);
+}
+
+.dark-mode a {
+  color: #3844bb;
+}
+
+.dark-mode a:hover {
+  color: #6644cc;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+ul, li, p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
