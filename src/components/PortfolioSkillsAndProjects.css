@@ -1,0 +1,162 @@
+.skills-and-projects {
+  display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    gap: 10px;
+  max-width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.skills {
+  display: flex;
+    flex-flow: column;
+  width: 300px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.skills h1,
+.projects h1 {
+  text-align: center;
+  padding: 15px 5px;
+}
+
+.skills ul,
+.projects ul {
+  max-height: 530px;
+  display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  overflow-y: scroll;
+  padding: 30px 0px;
+  background-color: rgba(50, 220, 170, 0.1);
+}
+
+.skills ul li {
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  transition: 0.2s ease;
+}
+
+.skills ul li:hover {
+  transform: scale(1.2);
+}
+
+.skills ul li:nth-child(6) img {
+  filter: opacity(0.9);
+}
+
+.skills ul li img,
+.projects ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects {
+  display: flex;
+    flex-flow: column;
+  width: 700px;
+  max-width: 700px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.projects ul li {
+  height: 230px;
+  width: 280px;
+  border: solid 3px rgb(20, 180, 140);
+  transition: 0.2s ease;
+  overflow: hidden;
+  background-size: 100%;
+  overflow-y: auto;
+}
+
+.projects ul li:hover {
+  transform: scale(1.05);
+}
+
+.projects ul li div {
+  opacity: 0;
+  display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+  min-height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.projects ul li div:hover {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.border-gradient {
+  border: 5px solid;
+  border-image-slice: 1;
+  -webkit-animation: borderGradient 3s linear infinite;
+          animation: borderGradient 3s linear infinite;
+}
+
+@-webkit-keyframes borderGradient {
+    0% {
+      border-image-source: linear-gradient(0deg, rgb(45, 180, 145), rgb(45, 180, 145), rgb(50, 235, 180));
+    }
+    25% {
+      border-image-source: linear-gradient(90deg, rgb(45, 180, 145), rgb(45, 180, 145), rgb(50, 235, 180));
+    }
+    50% {
+      border-image-source: linear-gradient(180deg, rgb(45, 180, 145), rgb(45, 180, 145), rgb(50, 235, 180));
+    }
+    75% {
+      border-image-source: linear-gradient(270deg, rgb(45, 180, 145), rgb(45, 180, 145), rgb(50, 235, 180));
+    }
+    100% {
+      border-image-source: linear-gradient(360deg, rgb(45, 180, 145), rgb(45, 180, 145), rgb(50, 235, 180));
+    }
+  }
+  
+  @keyframes borderGradient {
+    0% {
+      border-image-source: linear-gradient(0deg, rgb(45, 180, 145), rgb(45, 180, 145), rgb(50, 235, 180));
+    }
+    25% {
+      border-image-source: linear-gradient(90deg, rgb(45, 180, 145), rgb(45, 180, 145), rgb(50, 235, 180));
+    }
+    50% {
+      border-image-source: linear-gradient(180deg, rgb(45, 180, 145), rgb(45, 180, 145), rgb(50, 235, 180));
+    }
+    75% {
+      border-image-source: linear-gradient(270deg, rgb(45, 180, 145), rgb(45, 180, 145), rgb(50, 235, 180));
+    }
+    100% {
+      border-image-source: linear-gradient(360deg, rgb(45, 180, 145), rgb(45, 180, 145), rgb(50, 235, 180));
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .skills-and-projects {
+      justify-content: center;
+    }
+    .skills,
+  .projects {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 0px) and (max-width: 280px) {
+    .projects ul li {
+      height: 180px;
+      width: 200px;
+    }
+  }

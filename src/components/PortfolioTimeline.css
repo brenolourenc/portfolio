@@ -1,0 +1,128 @@
+.timeline {
+    display: flex;
+        flex-flow: column;
+        align-items: center;
+    height: 720px;
+    max-height: 720px;
+}
+.timeline h2 {
+    padding-bottom: 15px;
+}
+
+.horizontal-timeline {
+    display: flex;
+        gap: 95px;
+    background: rgba(50, 220, 170, 0.1);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    padding: 15px 10px;
+}
+
+.timeline-bar {
+    background-image: linear-gradient(90deg, transparent ,  rgb(20, 180, 140) 50px calc(100% - 50px), transparent);
+    border-radius: 50% 0px 50%;
+    position: absolute;
+        left: 0px;
+        bottom: 49.5%;
+    height: 5px;
+    transition: .15s;
+}
+
+.timeline-element,
+.low-timeline-element {
+    display: flex;
+        flex-flow: column;
+        align-items: center;
+    padding: 5px;
+    height: 100%;
+    position: relative;
+    min-width: 305px;
+    transition: .15s;
+}
+.timeline-element {
+    justify-content: flex-start;
+}
+.timeline-element::before {
+    background: rgb(20, 180, 140);
+    content: "";
+    height: 60px;
+    position: absolute;
+        top: 205px;
+    width: 5px;
+}
+.low-timeline-element {
+    justify-content: flex-end;
+}
+.low-timeline-element::before {
+    background: rgb(20, 180, 140);
+    content: "";
+    height: 60px;
+    position: absolute;
+        bottom: 205px;
+    width: 5px;
+}
+.timeline-element-ico {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    height: 50px;
+    width: 150px;
+    z-index: 99;
+    position: absolute;
+        bottom: 45%;
+    background: rgb(20, 180, 140);
+    border: solid 3px rgb(15, 140, 100);
+    border-radius: 5px;
+}
+.timeline-element div,
+.low-timeline-element div {
+    display: flex;
+        flex-flow: column;
+        gap: 5px;
+    width: 300px;
+    max-width: 300px;
+    height: 200px;
+    max-height: 200px;
+    overflow-y: scroll;
+    background: #d5e9da;
+    border: solid 3px rgb(20, 180, 140);
+}
+.timeline-element div h3,
+.low-timeline-element div h3 {
+    text-align: center;
+    word-break: break-word;
+    margin: 5px 5px;
+} 
+.timeline-element div p,
+.low-timeline-element div p {
+    word-break: break-word;
+    line-height: 20px;
+    margin: 5px 5px;
+}
+
+.dark-mode .timeline-element div,
+.dark-mode .low-timeline-element div {
+    background: #506055;
+}
+
+@media (max-height: 600px) {
+    .timeline {
+        height: 500px;
+        max-height: 500px;
+    }
+    .timeline-element-ico {
+        bottom: 8.2%;
+    }
+    .timeline-bar {
+        bottom: 18%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 280px) {
+    .timeline-element div,
+    .low-timeline-element div {
+        width: 200px;
+    }
+}

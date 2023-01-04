@@ -8,6 +8,28 @@ dialog {
   width: fit-content;
   overflow: hidden;
 }
+.technician,
+.conectar,
+.fundamentar {
+  height: 100vh;
+  width: 40vw;
+  padding: 10px;
+}
+.technician img,
+.conectar img,
+.fundamentar img {
+  height: 90%;
+  width: 100%;
+  border: solid 3px rgb(20, 180, 140);
+}
+.technician div,
+.conectar div,
+.fundamentar div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
 
 .vscode,
 .html5,
@@ -25,9 +47,6 @@ dialog {
   min-height: 400px;
   max-height: 400px;
   overflow-y: auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   border: 3px solid;
   border-image-slice: 1;
   color: rgba(255, 255, 255, 0.8352941176);
@@ -259,25 +278,91 @@ dialog {
     border-image-source: linear-gradient(360deg, rgb(255, 65, 65), rgb(230, 230, 230), rgb(90, 233, 255));
   }
 }
+
+@media (min-width: 724px) and (max-width: 1024px) {
+  .padding-screen {
+    padding: 50px 100px;
+  }
+  .technician,
+  .conectar,
+  .fundamentar {
+    height: 900px;
+    width: 650px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 723px) {
+  .padding-screen {
+    padding: 50px 50px;
+  }
+  .technician,
+  .conectar,
+  .fundamentar {
+    height: 600px;
+    width: 450px;
+  }
+}
+
 @media (min-width: 281px) and (max-width: 539px) {
   .vscode,
-.html5,
-.css3,
-.js,
-.react,
-.react_router,
-.git {
+  .html5,
+  .css3,
+  .js,
+  .react,
+  .react_router,
+  .git {
+    width: 300px;
+  }
+  .technician,
+  .conectar,
+  .fundamentar {
+    height: 450px;
     width: 300px;
   }
 }
+
 @media (min-width: 0px) and (max-width: 280px) {
   .vscode,
-.html5,
-.css3,
-.js,
-.react,
-.react_router,
-.git {
+  .html5,
+  .css3,
+  .js,
+  .react,
+  .react_router,
+  .git {
+      width: 200px;
+  }
+
+  .technician,
+  .conectar,
+  .fundamentar {
+    height: 300px;
     width: 200px;
+  }
+}
+
+@media (max-height: 600px) {
+  .technician,
+  .conectar,
+  .fundamentar {
+    height: 550px;
+    width: 400px;
+  }
+}
+
+@media (min-height: 281px) and (max-height: 414px) {
+  .technician,
+  .conectar,
+  .fundamentar {
+    height: 330px;
+    width: 250px;
+  }
+}
+
+@media (min-height: 0px) and (max-height: 280px) {
+  .technician,
+  .conectar,
+  .fundamentar {
+    height: 220px;
+    width: 150px;
   }
 }
