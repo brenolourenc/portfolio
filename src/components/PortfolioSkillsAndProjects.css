@@ -48,10 +48,6 @@
   transform: scale(1.2);
 }
 
-.skills ul li:nth-child(6) img {
-  filter: opacity(0.9);
-}
-
 .skills ul li img,
 .projects ul li img {
   width: 100%;

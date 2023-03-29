@@ -164,7 +164,6 @@ main {
 /* DARK MODE */
 .dark-mode .me,
 .dark-mode .social-media li:first-child img,
-.dark-mode .skills ul li:nth-child(6) img,
 .dark-mode .curriculum-vitae i img,
 .dark-mode .arrow img {
   filter: opacity(0.9) invert(1);

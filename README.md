@@ -1,6 +1,6 @@
 <h1>Portfolio</h1>
 
-<p>Este app foi criado com o objetivo de mostrar parte da minha capacidade como desenvolvedor e falar um pouco sobre min. Estarei atualizando este projeto conforme aprendo novas tecnologias, bom proveito :)</p>
+<p>Este app foi criado com o objetivo de mostrar parte da minha capacidade como profissional e falar um pouco sobre min. Estarei atualizando este projeto conforme aprendo novas tecnologias, bom proveito :)</p>
 
 <img src="/src/assets/demo/home.png"            alt="inicio">
 <img src="/src/assets/demo/about.png"           alt="sobre">

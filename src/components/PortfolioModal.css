@@ -37,7 +37,9 @@ dialog {
 .js,
 .react,
 .react_router,
-.git {
+.git,
+.photoshop,
+.aseprite {
   display: flex;
   flex-flow: column;
   gap: 10px;
@@ -57,12 +59,14 @@ dialog {
 .css3 h1,
 .js h1,
 .react h1,
-.react_router h1,
-.git h1 {
+.git h1,
+.photoshop h1,
+.aseprite h1 {
   text-align: center;
 }
 
 .vscode,
+.photoshop,
 .css3 {
   -webkit-animation: borderVScodeCSS3 3s linear infinite;
           animation: borderVScodeCSS3 3s linear infinite;
@@ -84,9 +88,9 @@ dialog {
           animation: borderReact 3s linear infinite;
 }
 
-.react_router {
-  -webkit-animation: borderReactRouter 3s linear infinite;
-          animation: borderReactRouter 3s linear infinite;
+.aseprite {
+  -webkit-animation: borderAseprite 3s linear infinite;
+          animation: borderAseprite 3s linear infinite;
 }
 
 .btn {
@@ -244,38 +248,38 @@ dialog {
     border-image-source: linear-gradient(360deg, rgb(0, 210, 210), rgb(0, 210, 210), rgb(195, 255, 255));
   }
 }
-@-webkit-keyframes borderReactRouter {
+@-webkit-keyframes borderAseprite {
   0% {
-    border-image-source: linear-gradient(0deg, rgb(255, 65, 65), rgb(230, 230, 230), rgb(90, 233, 255));
+    border-image-source: linear-gradient(0deg, rgb(160, 160, 160), rgb(160, 160, 160), rgb(230, 230, 230));
   }
   25% {
-    border-image-source: linear-gradient(90deg, rgb(255, 65, 65), rgb(230, 230, 230), rgb(90, 233, 255));
+    border-image-source: linear-gradient(90deg, rgb(160, 160, 160), rgb(160, 160, 160), rgb(230, 230, 230));
   }
   50% {
-    border-image-source: linear-gradient(180deg, rgb(255, 65, 65), rgb(230, 230, 230), rgb(90, 233, 255));
+    border-image-source: linear-gradient(180deg, rgb(160, 160, 160), rgb(160, 160, 160), rgb(230, 230, 230));
   }
   75% {
-    border-image-source: linear-gradient(270deg, rgb(255, 65, 65), rgb(230, 230, 230), rgb(90, 233, 255));
+    border-image-source: linear-gradient(270deg, rgb(160, 160, 160), rgb(160, 160, 160), rgb(230, 230, 230));
   }
   100% {
-    border-image-source: linear-gradient(360deg, rgb(255, 65, 65), rgb(230, 230, 230), rgb(90, 233, 255));
+    border-image-source: linear-gradient(360deg, rgb(160, 160, 160), rgb(160, 160, 160), rgb(230, 230, 230));
   }
 }
-@keyframes borderReactRouter {
+@keyframes borderAseprite {
   0% {
-    border-image-source: linear-gradient(0deg, rgb(255, 65, 65), rgb(230, 230, 230), rgb(90, 233, 255));
+    border-image-source: linear-gradient(0deg, rgb(160, 160, 160), rgb(160, 160, 160), rgb(230, 230, 230));
   }
   25% {
-    border-image-source: linear-gradient(90deg, rgb(255, 65, 65), rgb(230, 230, 230), rgb(90, 233, 255));
+    border-image-source: linear-gradient(90deg, rgb(160, 160, 160), rgb(160, 160, 160), rgb(230, 230, 230));
   }
   50% {
-    border-image-source: linear-gradient(180deg, rgb(255, 65, 65), rgb(230, 230, 230), rgb(90, 233, 255));
+    border-image-source: linear-gradient(180deg, rgb(160, 160, 160), rgb(160, 160, 160), rgb(230, 230, 230));
   }
   75% {
-    border-image-source: linear-gradient(270deg, rgb(255, 65, 65), rgb(230, 230, 230), rgb(90, 233, 255));
+    border-image-source: linear-gradient(270deg, rgb(160, 160, 160), rgb(160, 160, 160), rgb(230, 230, 230));
   }
   100% {
-    border-image-source: linear-gradient(360deg, rgb(255, 65, 65), rgb(230, 230, 230), rgb(90, 233, 255));
+    border-image-source: linear-gradient(360deg, rgb(160, 160, 160), rgb(160, 160, 160), rgb(230, 230, 230));
   }
 }
 
@@ -309,7 +313,8 @@ dialog {
   .css3,
   .js,
   .react,
-  .react_router,
+  .photoshop,
+  .aseprite,
   .git {
     width: 300px;
   }
@@ -327,7 +332,8 @@ dialog {
   .css3,
   .js,
   .react,
-  .react_router,
+  .photoshop,
+  .aseprite,
   .git {
       width: 200px;
   }
