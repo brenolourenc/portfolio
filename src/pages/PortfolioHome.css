@@ -42,8 +42,10 @@ main {
 }
 
 .me {
-  height: 80px;
-  width: 80px;
+  user-select: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
   filter: opacity(0.9);
 }
 
@@ -162,7 +164,6 @@ main {
 }
 
 /* DARK MODE */
-.dark-mode .me,
 .dark-mode .social-media li:first-child img,
 .dark-mode .curriculum-vitae i img,
 .dark-mode .arrow img {

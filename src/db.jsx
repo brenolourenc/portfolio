@@ -1,5 +1,6 @@
 import TodoList from './assets/projects/todo-list.png'
 import ControleFinanceiro from './assets/projects/controle-financeiro.png'
+import Author from './assets/profile.jpg'
 
 import Technician from './assets/certificates/technician-certificate.png'
 import Conectar from './assets/certificates/discover-conectar-certificate-pt.png'
@@ -15,6 +16,7 @@ export const db = {
 
         home: {
             profile: {
+                photo: Author,
                 title: 'Breno Lourenço',
                 profession: 'TI Suporte & Operações e Desenvolvedor de Software'
             },
@@ -159,6 +161,7 @@ export const db = {
 
         home: {
             profile: {
+                photo: Author,
                 title: 'Breno Lourenço',
                 profession: 'IT Support & Operations and Software Developer'
             },

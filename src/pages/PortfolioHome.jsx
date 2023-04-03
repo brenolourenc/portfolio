@@ -4,7 +4,7 @@ import { db } from '../db'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import Curriculum from '../assets/curriculum-vitae-breno-lourenço.pdf'
+import Curriculum from '../assets/curriculum brenolourenc.pdf'
 
 import Header from '../components/PortfolioHeader'
 import Footer from '../components/PortfolioFooter'
@@ -103,7 +103,7 @@ function Home() {
             <main>
                 <section className="subject" id='subject'>
                     <div className='profile'>
-                        <img className='me' src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9ImluZm8iLz48ZyBpZD0iaWNvbnMiPjxwYXRoIGQ9Ik0xMiwwQzUuNCwwLDAsNS40LDAsMTJjMCw2LjYsNS40LDEyLDEyLDEyczEyLTUuNCwxMi0xMkMyNCw1LjQsMTguNiwwLDEyLDB6IE0xMiw0YzIuMiwwLDQsMi4yLDQsNXMtMS44LDUtNCw1ICAgcy00LTIuMi00LTVTOS44LDQsMTIsNHogTTE4LjYsMTkuNUMxNi45LDIxLDE0LjUsMjIsMTIsMjJzLTQuOS0xLTYuNi0yLjVjLTAuNC0wLjQtMC41LTEtMC4xLTEuNGMxLjEtMS4zLDIuNi0yLjIsNC4yLTIuNyAgIGMwLjgsMC40LDEuNiwwLjYsMi41LDAuNnMxLjctMC4yLDIuNS0wLjZjMS43LDAuNSwzLjEsMS40LDQuMiwyLjdDMTkuMSwxOC41LDE5LjEsMTkuMSwxOC42LDE5LjV6IiBpZD0idXNlcjIiLz48L2c+PC9zdmc+" alt="Subject photo" />
+                        <img className='me' src={ database.home.profile.photo } alt="Subject photo" />
                         <h1 className='main-title-size'>
                             { database.home.profile.title }
                         </h1>
