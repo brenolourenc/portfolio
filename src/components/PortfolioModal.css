@@ -39,7 +39,9 @@ dialog {
 .react_router,
 .git,
 .photoshop,
-.aseprite {
+.aseprite,
+.gamemaker, 
+.mysql {
   display: flex;
   flex-flow: column;
   gap: 10px;
@@ -61,13 +63,16 @@ dialog {
 .react h1,
 .git h1,
 .photoshop h1,
-.aseprite h1 {
+.aseprite h1,
+.gamemaker h1, 
+.mysql h1 {
   text-align: center;
 }
 
 .vscode,
 .photoshop,
-.css3 {
+.css3,
+.mysql {
   -webkit-animation: borderVScodeCSS3 3s linear infinite;
           animation: borderVScodeCSS3 3s linear infinite;
 }
@@ -83,7 +88,8 @@ dialog {
           animation: borderJS 3s linear infinite;
 }
 
-.react {
+.react,
+.gamemaker {
   -webkit-animation: borderReact 3s linear infinite;
           animation: borderReact 3s linear infinite;
 }
